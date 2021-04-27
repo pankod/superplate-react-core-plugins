@@ -1,0 +1,13 @@
+{
+  "compilerOptions":{
+     "paths":{
+        "@test/*":[
+           "test/*"
+        ],
+        "@test":[
+           "test"
+        ]
+     }
+  },
+  "exclude": ["test/*"]
+}

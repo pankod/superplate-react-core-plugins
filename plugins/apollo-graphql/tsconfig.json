@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@components/*": ["src/components/*"],
+            "@components": ["src/components"],
+            "@services/*": ["src/services/*"],
+            "@services": ["src/services"],
+            "@graphqlTypes/*": ["__generated__/*"],
+            "@graphqlTypes": ["__generated__"]
+        }
+    },
+    "exclude": ["__generated__/globalTypes.ts"]
+}

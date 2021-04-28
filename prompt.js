@@ -1,6 +1,6 @@
 module.exports = {
     prompts: [
-/*         {
+    /*  {
             name: "ui",
             message: "UI framework:",
             type: "select",

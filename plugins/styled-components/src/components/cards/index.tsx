@@ -1,6 +1,6 @@
 import React from "react";
 
-import data from "@public/meta.json";
+import data from "meta.json";
 import { Row, Col, Container, Card, CardBody, CardText, CardTitle } from "./styled";
 
 export const Cards: React.FC = () => {

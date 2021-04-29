@@ -1,12 +1,12 @@
 <%_ if (testing === 'testing-library') { _%>   
-import { render } from "@test";
+import { render } from "test";
 
 <%_ } else if (testing === 'enzyme') { _%>
-import mount from "@test/mount";
+import mount from "test/mount";
 
-import { Card } from "@components/css";
+import { Card } from "components/css";
 <%_ } _%>
-import data from "@public/meta.json";
+import data from "public/meta.json";
 
 import { Cards } from "./index";
 

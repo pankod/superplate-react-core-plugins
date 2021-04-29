@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button } from "@components";
+import { Button } from "components";
 import { Wrapper, Container } from "./styled";
 
 export const Main: React.FC = () => {

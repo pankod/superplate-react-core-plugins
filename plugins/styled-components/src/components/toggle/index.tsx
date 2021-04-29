@@ -1,7 +1,4 @@
 import React from 'react'
-<%_ if (!features.includes("svgr")) { _%>
-import Image from "next/image";
-<%_ } _%>
     
 <%_ if (features.includes("svgr")) { _%>
 import { SunIcon, MoonIcon } from "@components/icons";
@@ -29,12 +26,12 @@ export const Toggle: React.FC<IButton> = () => {
       <%_ if (features.includes("svgr")) { _%>
       <SunIcon width="32" height="32" />
       <%_ } else { _%>
-      <Image src="/icons/sun-icon.svg" alt="sun" width="32" height="32" />
+      <img src="/icons/sun-icon.svg" alt="sun" width="32" height="32" />
       <%_ } _%>
       <%_ if (features.includes("svgr")) { _%>
       <MoonIcon width="32" height="32" />
       <%_ } else { _%>
-      <Image src="/icons/moon-icon.svg" alt="moon" width="32" height="32" />
+      <img src="/icons/moon-icon.svg" alt="moon" width="32" height="32" />
       <%_ } _%>
     </ToggleContainer>
   );

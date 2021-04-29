@@ -3,7 +3,6 @@
         "svgr": "npx @svgr/cli -d src/components/icons --ignore-existing --icon --typescript public/icons"
     },
     "devDependencies": {
-      "@svgr/cli": "^5.5.0"
+        "@svgr/cli": "^5.5.0"
     }
-  }
-  
+}

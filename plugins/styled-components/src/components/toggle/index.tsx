@@ -1,10 +1,10 @@
 import React from 'react'
     
 <%_ if (features.includes("svgr")) { _%>
-import { SunIcon, MoonIcon } from "@components/icons";
+import { SunIcon, MoonIcon } from "components/icons";
 <%_ } _%>
 
-import { useTheme } from '@definitions/styled-components';
+import { useTheme } from 'definitions/styled-components';
 import { ToggleContainer } from "./styled";
 
 export type IButton = React.DetailedHTMLProps<

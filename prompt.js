@@ -183,7 +183,7 @@ module.exports = {
             when: function (answers) {
                 return answers.ui !== "none";
             },
-            pattern: ["src/components/**", "pages/index.tsx"],
+            pattern: ["src/components/**", "src/pages/index.tsx"],
         },
         {
             when: function (answers) {

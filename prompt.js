@@ -1,6 +1,6 @@
 module.exports = {
     prompts: [
-        /*  {
+        {
             name: "ui",
             message: "UI framework:",
             type: "select",
@@ -13,7 +13,7 @@ module.exports = {
                 { message: "Antd", name: "antd" },
             ],
             default: "none",
-        }, */
+        },
         {
             name: "css_features",
             message: "CSS Preprocessor:",
@@ -40,7 +40,7 @@ module.exports = {
             skip: ({ answers }) => answers.css_features !== "styled-components",
             default: "none",
         },
-        /* {
+        {
             name: "features",
             message: "Features:",
             hint: "use <arrow-keys> to navigate, <space> to select.",
@@ -175,7 +175,7 @@ module.exports = {
                 { message: "Travis", name: "travis" },
             ],
             default: "none",
-        }, */
+        },
     ],
     ignores: [
         {

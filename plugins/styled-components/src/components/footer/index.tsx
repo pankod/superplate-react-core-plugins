@@ -1,6 +1,6 @@
 import React from "react";
 <%_ if (features.includes("svgr")) { _%>
-import { PankodIcon, GithubIcon, TwitterIcon, YoutubeIcon, LinkedinIcon } from "@components/icons";
+import { PankodIcon, GithubIcon, TwitterIcon, YoutubeIcon, LinkedinIcon } from "components/icons";
 <%_ } _%>
 import { Container, LogoButton, List, ListItem } from "./styled";
 

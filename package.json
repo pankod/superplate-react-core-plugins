@@ -23,7 +23,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": [
+    "*.{js}": [
       "npm run lint -- --quiet --fix"
     ]
   },

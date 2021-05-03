@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Header, Main, Cards, Footer } from "@components";
+import { Header, Main, Cards, Footer } from "components";
 
 const Home: React.FC = () => {
     return (

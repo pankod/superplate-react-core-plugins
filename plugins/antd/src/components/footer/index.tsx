@@ -1,7 +1,4 @@
 import React, { CSSProperties } from "react";
-<%_ if (!features.includes("svgr")) { _%>
-import Image from "next/image";
-<%_ } _%>
 import { Space } from "antd";
 import {
     GithubOutlined,
@@ -11,7 +8,7 @@ import {
 } from "@ant-design/icons";
 
 <%_ if (features.includes("svgr")) { _%>
-import { PankodIcon } from "@components/icons";
+import { PankodIcon } from "components/icons";
 <%_ } _%>
 
 export const Footer: React.FC = () => {
@@ -33,7 +30,7 @@ export const Footer: React.FC = () => {
                 <%_ if (features.includes("svgr")) { _%>
                 <PankodIcon <% if(!(e2etest === "none")) { %>  data-test="icon" <% } %> color="white" width="140" height="28" />
                 <%_ } else { _%>    
-                <Image <% if(!(e2etest === "none")) { %>  data-test="icon" <% } %> src="/icons/pankod-icon.svg" alt="pankod" width="140" height="28" />
+                <img <% if(!(e2etest === "none")) { %>  data-test="icon" <% } %> src="/icons/pankod-icon.svg" alt="pankod" width="140" height="28" />
                 <%_ } _%>
                 <Space align="center" size="middle" <% if (testing === 'testing-library') { %> data-testid="icons-container" <% } %> >
                     <a

@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Col } from "antd";
 
-import { Card } from "@components";
-import data from "@public/meta.json";
+import { Card } from "components";
+import data from "meta.json";
 
 export const Cards: React.FC = () => {
 

@@ -2,7 +2,7 @@ import React from "react";
 import { request } from "graphql-request";
 
 import { GET_LAUNCHES } from "./graphql";
-import { GetLaunchesQuery } from "@graphqlTypes/__types__";
+import { GetLaunchesQuery } from "../../../../__generated__/__types__";
 
 const endpoint = "https://api.spacex.land/graphql/";
 

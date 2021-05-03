@@ -1,7 +1,7 @@
 import React from "react";
 import { Center } from "@chakra-ui/react";
 
-import { Logo } from "@components";
+import { Logo } from "components";
 
 export const Header: React.FC = () => {
     return (

@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, useTheme } from "@chakra-ui/react";
 
-import { Button } from "@components";
+import { Button } from "components";
 
 export const Main: React.FC = () => {
     const theme = useTheme();

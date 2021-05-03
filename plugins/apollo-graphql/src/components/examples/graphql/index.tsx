@@ -2,7 +2,10 @@ import React from "react";
 import { useQuery } from "@apollo/client";
 
 import { GET_LAUNCHES } from "./graphql";
-import { GetLaunches, GetLaunchesVariables } from "@graphqlTypes/GetLaunches";
+import {
+  GetLaunches,
+  GetLaunchesVariables,
+} from "../../../../__generated__/GetLaunches";
 
 export const GraphQLExample: React.FC = () => {
     const { data, loading, error } = useQuery<

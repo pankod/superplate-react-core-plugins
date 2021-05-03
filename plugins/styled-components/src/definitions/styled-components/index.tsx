@@ -1,6 +1,4 @@
-export * from "./common";
-export * from "./dark";
-export * from "./light";
+
 
 import React from "react";
 import { ThemeProvider } from "styled-components/macro";
@@ -41,3 +39,7 @@ export const StyledThemeProvider: React.FC = ({ children }) => {
       </ThemeContext.Provider>
   );
 };
+
+export * from "./common";
+export * from "./dark";
+export * from "./light";

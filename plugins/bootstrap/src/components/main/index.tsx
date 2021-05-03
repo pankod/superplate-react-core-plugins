@@ -1,7 +1,7 @@
 import React, { CSSProperties } from "react";
 import { Container } from "react-bootstrap";
 
-import { Button } from "@components";
+import { Button } from "components";
 
 export const Main: React.FC = () => {
     return (

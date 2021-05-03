@@ -1,9 +1,9 @@
 <%_ if (testing === 'testing-library') { _%>   
-import { render } from "@test";
+import { render } from "test";
 <%_ } else if (testing === 'enzyme') { _%>
-import mount from "@test/mount";
+import mount from "test/mount";
 
-import { Button } from "@components/css";
+import { Button } from "components/css";
 <%_ } _%>
 
 import { Main } from "./index";

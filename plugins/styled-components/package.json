@@ -2,6 +2,9 @@
   "dependencies": {
     "styled-components": "^5.2.1"
   },
+  "devDependencies": {
+    "@types/styled-system": "^5.1.11"
+  },
   "resolutions": {
     "styled-components": "^5"
   }

@@ -1,8 +1,8 @@
 import React from "react";
 
 import styles from "./index.module.scss";
-import data from "@public/meta.json";
-import { Card } from "@components/scss";
+import data from "meta.json";
+import { Card } from "components/scss";
 
 export const Cards: React.FC = () => {
     return (

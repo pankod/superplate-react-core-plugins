@@ -1,10 +1,10 @@
 <%_ if (testing === 'testing-library') { _%>   
-import { render } from "@test";
+import { render } from "test";
 
 <%_ } else if (testing === 'enzyme') { _%>
-import mount from "@test/mount";
+import mount from "test/mount";
 
-import { Logo } from "@components";
+import { Logo } from "components";
 <%_ } _%>
 import { Header } from "./index";
 
@@ -19,7 +19,7 @@ describe("Header component testing with testing-library", () => {
         expect(container.parentElement).toBeTruthy();
     });
 
-    it("renders successfuly next.js logo", () => {
+    it("renders successfuly react logo", () => {
         expect(container.firstChild).toBeDefined();
     });
 });
@@ -31,7 +31,7 @@ describe("Header component testing with testing-library", () => {
         expect(component).toBeTruthy();
     });
 
-    it("renders successfuly next.js logo", () => {
+    it("renders successfuly react logo", () => {
         expect(component.find(Logo)).toBeDefined();
     });
 });

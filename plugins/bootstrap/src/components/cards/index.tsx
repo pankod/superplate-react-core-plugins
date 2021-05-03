@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Container, Card } from "react-bootstrap";
 
-import data from "@public/meta.json";
+import data from "meta.json";
 
 export const Cards: React.FC = () => {
 

@@ -1,7 +1,7 @@
 <%_ if (testing === 'testing-library') { _%>
-import { fireEvent, render } from "@test";
+import { fireEvent, render } from "test";
 <%_ } else if (testing === 'enzyme') {_%>
-import mount from "@test/mount";
+import mount from "test/mount";
 import { Button as BaseButton } from "@chakra-ui/react";
 <%_ } _%>
 

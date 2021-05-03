@@ -1,7 +1,7 @@
 import React from "react";
 import { SimpleGrid, Box, Heading, Text } from "@chakra-ui/react";
 
-import data from "@public/meta.json";
+import data from "meta.json";
 
 export const Cards: React.FC = () => {
 

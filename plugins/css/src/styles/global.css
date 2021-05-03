@@ -1,3 +1,8 @@
+<%_ if (ui.includes("tailwind")) { _%>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+<%_ } else { _%>
 html,
 body {
     margin: 0;
@@ -5,3 +10,4 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
         "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+<%_ } _%>

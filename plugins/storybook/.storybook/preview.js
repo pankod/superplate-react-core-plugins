@@ -1,3 +1,7 @@
+
+<%_ if (ui.includes("tailwind")) { _%>
+  import "../src/styles/global.css";
+<%_ } _%>
 <%_ if (ui.includes("bootstrap")) { _%>
   import styles from "../src/styles/app.scss";
 <%_ } _%>

@@ -1,6 +1,5 @@
 const base = {
     _app: {
-        import: ['import "tailwindcss/tailwind.css";'],
         inner: [],
         wrapper: [],
     },

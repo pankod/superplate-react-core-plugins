@@ -1,5 +1,8 @@
-<%_ if (ui.includes("chakra-ui")) { _%>
+<%_ if (ui.includes("chakra-ui") || ui.includes("tailwind")) { _%>
 const path = require("path");
+<%_ } _%>
+
+<%_ if (ui.includes("chakra-ui")) { _%>
 const toPath = (_path) => path.join(process.cwd(), _path);
 <%_ } _%>
 
@@ -13,6 +16,7 @@ module.exports = {
         "@storybook/addon-essentials",
         "@storybook/addon-controls",
         "@storybook/addon-knobs",
+        "@storybook/preset-create-react-app",
         <%_ if (css_features.includes("styled-components")) { _%>
         "storybook-addon-styled-component-theme/dist/register",
         <%_ } _%>
@@ -47,6 +51,22 @@ module.exports = {
                 }
             }
         }
+        <%_ } _%>
+
+        <%_ if (ui.includes("tailwind")) { _%>
+        config.module.rules.push({
+            test: /\,css&/,
+            use: [
+                {
+                loader: "postcss-loader",
+                options: {
+                    ident: "postcss",
+                    plugins: [require("tailwindcss"), require("autoprefixer")],
+                },
+                },
+            ],
+            include: path.resolve(__dirname, "../"),
+        });
         <%_ } _%>
 
         return config;

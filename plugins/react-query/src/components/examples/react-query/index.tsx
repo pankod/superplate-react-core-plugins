@@ -7,8 +7,9 @@ import { useQuery } from "react-query";
  * please visit https://react-query.tanstack.com/
  */
 
-const API_URL =
-  "https://official-joke-api.appspot.com/jokes/programming/random";
+const API_URL = <%- features.includes("reverse-proxy") ?
+"'/api/jokes/programming/random'" : "'https://official-joke-api.appspot.com/jokes/programming/random'"
+-%>;
 
 export const ReactQueryExample = () => {
 

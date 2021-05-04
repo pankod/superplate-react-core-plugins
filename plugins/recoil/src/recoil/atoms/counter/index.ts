@@ -1,5 +1,5 @@
 import { atom } from "recoil";
-import { Atoms } from "@recoil/constants";
+import { Atoms } from "recoil/constants";
 
 /**
  * This file is generated as an example of Recoil Atoms
@@ -9,6 +9,6 @@ import { Atoms } from "@recoil/constants";
  */
 
 export const counter = atom({
-  key: Atoms.Counter,
-  default: 0,
+    key: Atoms.Counter,
+    default: 0,
 });

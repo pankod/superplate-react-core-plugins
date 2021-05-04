@@ -108,39 +108,27 @@ module.exports = {
         {
             name: "linter",
             message: "Linting tools:",
-            type: "multiselect",
+            type: "select",
             hint: "use <arrow-keys> to navigate, <space> to select.",
             pageSize: 10,
             choices: [
                 { message: "ESLint", name: "eslint" },
-                { message: "Prettier", name: "prettier" },
-            ],
-            default: [],
-        },
-        {
-            name: "eslint_specific",
-            message: "Do you want to use lint-staged?",
-            type: "select",
-            choices: [
-                { message: "None", name: "none" },
                 { message: "Lint staged files", name: "lint-staged" },
             ],
-            skip: ({ answers }) => !answers.linter.includes("eslint"),
-            default: "none",
+            default: "eslint",
         },
         {
             name: "testing",
             message: "Testing Framework:",
             type: "select",
             choices: [
-                { message: "None", name: "none" },
                 { message: "Jest", name: "jest" },
                 {
-                    message: "React Testing Library + Jest",
+                    message: "React Testing Library",
                     name: "testing-library",
                 },
-                { message: "Enzyme + Jest", name: "enzyme" },
             ],
+            default: "jest",
         },
         {
             name: "e2etest",

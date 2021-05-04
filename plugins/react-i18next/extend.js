@@ -1,6 +1,6 @@
 const base = {
     _app: {
-        import: ["import { appWithTranslation } from '@i18n';"],
+        import: ['import "./i18n";'],
         inner: [],
         wrapper: [],
     },

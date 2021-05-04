@@ -1,8 +1,8 @@
 {
     "scripts": {
-        "build:analyze": "ANALYZE=true npm run build"
+        "analyze": "source-map-explorer 'build/static/js/*.js'"
         },
-        "dependencies": {
-        "@next/bundle-analyzer": "^10.0.5"
+    "dependencies": {
+        "source-map-explorer": "^2.5.2"
         }
 }

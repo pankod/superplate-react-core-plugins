@@ -3,11 +3,11 @@ import "./mocks";
 import { mockResponse } from "./mocks";
 
 <%_ if (testing === 'testing-library') { _%>
-import { render, waitFor } from "@test";
+import { render, waitFor } from "test";
 <%_ } _%>
 
 <%_ if (testing === 'enzyme') { _%>
-import  from "@test/mount";
+import  from "test/mount";
 <%_ } _%>
 
 <%_ if (testing === 'testing-library') { _%>

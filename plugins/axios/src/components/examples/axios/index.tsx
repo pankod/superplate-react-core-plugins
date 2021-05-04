@@ -8,7 +8,10 @@ import axios from "axios";
  * please visit https://github.com/axios/axios
  */
 
-const BASE_API_URL = "https://official-joke-api.appspot.com/";
+
+const BASE_API_URL = <%- features.includes("reverse-proxy") ?
+"'/api'" : "'https://official-joke-api.appspot.com/'"
+-%>;
 
 const API_URL = "/jokes/programming/random";
 
@@ -56,16 +59,21 @@ export const AxiosExample = () => {
     return (
         <div>
             <header>
-                <h2>Fetch Data Fetching Example</h2>
+                <h2>Axios Fetching Example</h2>
             </header>
             <main
             <%_ if (testing !== "none") { _%>
                 data-testid="joke-container"
             <%_ } _%>
             >
-                <p>Programmer Jokes {`#${data[0].id}`}</p>
-                <p>{data[0].setup}</p>
-                <p>{data[0].punchline}</p>
+                {
+                    data.length > 0 &&
+                    <>
+                     <p>Programmer Jokes {`#${data[0].id}`}</p>
+                     <p>{data[0].setup}</p>
+                     <p>{data[0].punchline}</p>
+                    </>
+                }
             </main>
             <footer>
                 <a

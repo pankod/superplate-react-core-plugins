@@ -192,12 +192,6 @@ module.exports = {
         },
         {
             when: function (answers) {
-                return answers.testing === "none";
-            },
-            pattern: ["**/src/**/*.@(spec|test).@(ts|tsx)"],
-        },
-        {
-            when: function (answers) {
                 return answers.testing === "jest";
             },
             pattern: ["**/src/**/*.@(spec|test).@(tsx)"],

@@ -1,5 +1,5 @@
 {
     "name": "Bundle Analyzer",
-    "description": "Use webpack-bundle-analyzer in your Next.js project. Visualize size of webpack output files with an interactive zoomable treemap.",
-    "url": "https://github.com/vercel/next.js/tree/canary/packages/next-bundle-analyzer"
+    "description": "Source map explorer analyzes JavaScript bundles using the source maps. This helps you understand where code bloat is coming from.",
+    "url": "https://github.com/danvk/source-map-explorer#readme"
 }

@@ -112,7 +112,7 @@ module.exports = {
             hint: "use <arrow-keys> to navigate, <space> to select.",
             pageSize: 10,
             choices: [
-                { message: "ESLint", name: "eslint" },
+                { message: "ESLint (built-in support)", name: "eslint" },
                 { message: "Lint staged files", name: "lint-staged" },
             ],
             default: "eslint",

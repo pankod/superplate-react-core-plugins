@@ -101,8 +101,7 @@ module.exports = {
             type: "select",
             choices: [
                 { message: "None", name: "none" },
-                { message: "next-translate", name: "next-translate" },
-                { message: "next-i18next", name: "next-i18next" },
+                { message: "react-i18next", name: "react-i18next" },
             ],
             default: "none",
         },

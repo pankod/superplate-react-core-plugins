@@ -1,8 +1,6 @@
-FROM node:12-alpine
+FROM node:14-alpine
 
 WORKDIR /opt/app
-
-ENV NODE_ENV production
 
 COPY package*.json ./
 
@@ -10,6 +8,13 @@ RUN npm ci
 
 COPY . /opt/app
 
-RUN npm install --dev && npm run build
+RUN npm run build
 
-CMD [ "npm", "start" ]
+COPY --from=0 /opt/app/build /opt/app
+WORKDIR /opt/app/
+
+ENV NODE_ENV=production
+
+RUN npm install -g serve
+
+CMD serve -l 5000

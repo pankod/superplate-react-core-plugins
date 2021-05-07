@@ -1,0 +1,10 @@
+{
+    "jest": {
+        "moduleNameMapper": {
+          "\\.(scss|sass|css)$": "identity-obj-proxy"
+        },
+        "transformIgnorePatterns": [
+          "/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$"
+        ]
+      }
+}

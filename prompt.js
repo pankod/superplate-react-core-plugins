@@ -47,7 +47,7 @@ module.exports = {
             type: "multiselect",
             pageSize: 2,
             choices: [
-                { message: "Fetch (next.js built-in)", name: "fetch" },
+                { message: "Fetch (CRA built-in)", name: "fetch" },
                 { message: "Axios", name: "axios" },
                 { message: "Storybook", name: "storybook" },
                 { message: "SVGR", name: "svgr" },
@@ -122,7 +122,7 @@ module.exports = {
             message: "Testing Framework:",
             type: "select",
             choices: [
-                { message: "Jest", name: "jest" },
+                { message: "Jest (CRA built-in)", name: "jest" },
                 {
                     message: "React Testing Library",
                     name: "testing-library",

@@ -1,10 +1,15 @@
 {
-    "jest": {
-        "moduleNameMapper": {
-          "\\.(scss|sass|css)$": "identity-obj-proxy"
-        },
-        "transformIgnorePatterns": [
-          "/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$"
-        ]
-      }
+  "devDependencies": {
+    "identity-obj-proxy": "^3.0.0",
+    "nock": "^13.0.6",
+    "dotenv": "^8.2.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(scss|sass|css)$": "identity-obj-proxy"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!antd|@ant-design|rc-.+?|@babel/runtime).+(js|jsx)$"
+    ]
+  }
 }

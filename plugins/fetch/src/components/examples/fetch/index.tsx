@@ -4,9 +4,7 @@ import React, { useEffect, useState } from "react";
  * This component is generated as an example for fetch
  */
 
-const API_URL = <%- features.includes("reverse-proxy") ?
-"'/api/jokes/programming/random'" : "'https://official-joke-api.appspot.com/jokes/programming/random'"
--%>;
+const API_URL = "https://official-joke-api.appspot.com/jokes/programming/random";
 
 export const FetchExample = () => {
     const [error, setError] = useState(null);

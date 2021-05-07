@@ -10,5 +10,8 @@ export const mockResponse = [
 ];
 
 nock("https://official-joke-api.appspot.com")
+    .defaultReplyHeaders({
+        "access-control-allow-origin": "*",
+    })
     .get("/jokes/programming/random")
     .reply(200, mockResponse);

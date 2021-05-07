@@ -8,10 +8,7 @@ import axios from "axios";
  * please visit https://github.com/axios/axios
  */
 
-
-const BASE_API_URL = <%- features.includes("reverse-proxy") ?
-"'/api'" : "'https://official-joke-api.appspot.com/'"
--%>;
+const BASE_API_URL = "https://official-joke-api.appspot.com";
 
 const API_URL = "/jokes/programming/random";
 

@@ -24,8 +24,8 @@ This is the source repository for [superplate](https://github.com/pankod/superpl
 - [Axios](https://github.com/axios/axios)
 - [Storybook](https://storybook.js.org/)
 - [SVGR](https://react-svgr.com/)
-- [Reverse Proxy](https://webpack.js.org/configuration/dev-server/#devserverproxy)
-- [Bundle Analyzer](https://github.com/vercel/next.js/tree/canary/packages/next-bundle-analyzer)
+- [Reverse Proxy](https://create-react-app.dev/docs/proxying-api-requests-in-development/)
+- [Bundle Analyzer](https://create-react-app.dev/docs/analyzing-the-bundle-size/)
 - [Apollo GraphQL Client](https://www.apollographql.com/docs/react/)
 - [graphql-request](https://github.com/prisma-labs/graphql-request)
 
@@ -44,8 +44,7 @@ This is the source repository for [superplate](https://github.com/pankod/superpl
 
 ### i18n
 
-- [next-translate](https://github.com/vinissimus/next-translate)
-- [next-i18next](https://github.com/isaachinman/next-i18next)
+- [react-i18next](https://react.i18next.com/)
 
 ### Linters / Formatters
 
@@ -57,7 +56,6 @@ This is the source repository for [superplate](https://github.com/pankod/superpl
 
 - [Jest](https://jestjs.io/)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
-- [Enzyme](https://enzymejs.github.io/enzyme/)
 
 ### E2E Testing Frameworks
 

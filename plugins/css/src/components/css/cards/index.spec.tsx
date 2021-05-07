@@ -6,7 +6,7 @@ import mount from "test/mount";
 
 import { Card } from "components/css";
 <%_ } _%>
-import data from "../../../meta.json";
+import data from "meta.json";
 
 import { Cards } from "./index";
 

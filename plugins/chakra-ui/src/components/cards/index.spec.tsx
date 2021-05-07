@@ -6,7 +6,7 @@ import mount from "test/mount";
 import { Box } from "@chakra-ui/react";
 
 <%_ } _%>
-import data from "../../../meta.json";
+import data from "meta.json";
 import { Cards } from "./index";
 
 <%_ if (testing === 'testing-library') { _%>

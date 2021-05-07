@@ -9,7 +9,7 @@
 import { addDecorator } from "@storybook/react";
 <%_ } _%>
 <%_ if (css_features.includes("styled-components")) { _%>
-  import { withThemesProvider } from "storybook-addon-styled-component-theme";
+  import { withThemesProvider } from "@storybook-addon-styled-component-theme";
   
   import { light } from "../src/definitions/styled-components/light"
   import { dark } from "../src/definitions/styled-components/dark"

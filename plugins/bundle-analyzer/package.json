@@ -1,8 +1,9 @@
 {
     "scripts": {
+        "build:analyze": "npm run build && npm run analyze",
         "analyze": "source-map-explorer 'build/static/js/*.js'"
-        },
+    },
     "dependencies": {
         "source-map-explorer": "^2.5.2"
-        }
+    }
 }

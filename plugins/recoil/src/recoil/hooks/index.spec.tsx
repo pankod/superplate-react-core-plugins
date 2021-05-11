@@ -1,12 +1,8 @@
-<%_ if (testing === 'enzyme') { _%>
-import { act } from "react-dom/test-utils";
-<%_ } else if (testing === 'testing-library') { _%>
+<%_ if (testing === 'testing-library') { _%>
 import { renderHook, act } from "testing-library/react-hooks";
 <%_ } _%>
 
-<%_ if (testing === 'enzyme') { _%>
-import mount from "test/mount";
-<%_ } else if (testing === 'testing-library') { _%>
+<%_ if (testing === 'testing-library') { _%>
 import { AllTheProviders } from "test";
 <%_ } _%>
 
@@ -18,58 +14,7 @@ import { useCounter } from "./useCounter";
  * also you can create snapshot tests for your selectors.
  */
 
-<%_ if (testing === 'enzyme') { _%>
-
-const HookWrapper = ({ hook }) => {
-    const val = hook();
-    // @ts-expect-error add custom property to access in the wrapper
-    return <div hook={val} />;
-};
-
-describe("Recoil useCounter Hook", () => {
-    type HookReturnType = ReturnType<typeof useCounter>;
-
-    const wrapper = mount(<HookWrapper hook={useCounter} />);
-
-    const [_, { increase, decrease }] = (wrapper.find("div").props() as {
-        hook: HookReturnType;
-    }).hook;
-
-    it("should set initial count to 0", () => {
-        const [count] = (wrapper.find("div").props() as {
-            hook: HookReturnType;
-        }).hook;
-        expect(count).toEqual(0);
-    });
-    it("should increase count by 1", () => {
-        act(() => {
-            increase();
-        });
-
-        wrapper.update();
-
-        const [count] = (wrapper.find("div").props() as {
-            hook: HookReturnType;
-        }).hook;
-
-        expect(count).toEqual(1);
-    });
-    it("should increase count by 1", () => {
-        act(() => {
-            decrease();
-        });
-
-        wrapper.update();
-
-        const [count] = (wrapper.find("div").props() as {
-            hook: HookReturnType;
-        }).hook;
-
-        expect(count).toEqual(0);
-    });
-});
-
-<%_ } else if (testing === 'testing-library') { _%>
+<%_ if (testing === 'testing-library') { _%>
 
 describe("Recoil useCounter Hook", () => {
   it("should set initial value to 0", async () => {

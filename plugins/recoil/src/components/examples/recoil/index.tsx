@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useCounter } from "recoil/hooks";
+import { useCounter } from "store/hooks";
 
 /**
  * This component is provided as an example usage of Recoil in components

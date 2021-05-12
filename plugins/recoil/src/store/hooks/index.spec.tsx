@@ -1,5 +1,5 @@
 <%_ if (testing === 'testing-library') { _%>
-import { renderHook, act } from "testing-library/react-hooks";
+import { renderHook, act } from "@testing-library/react-hooks";
 <%_ } _%>
 
 <%_ if (testing === 'testing-library') { _%>

@@ -1,5 +1,5 @@
 import { atom } from "recoil";
-import { Atoms } from "recoil/constants";
+import { Atoms } from "store/constants";
 
 /**
  * This file is generated as an example of Recoil Atoms

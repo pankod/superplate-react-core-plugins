@@ -10,6 +10,8 @@ COPY . /opt/app
 
 RUN npm run build
 
+FROM node:14-alpine
+
 COPY --from=0 /opt/app/build /opt/app
 WORKDIR /opt/app/
 
